@@ -12,7 +12,7 @@
     height: 200px;
     transform: rotate(0deg) ;
     display: inline-block;
-    transition: all 2s linear;
+    transition: all 3s linear;
     transform-origin: right bottom;
 }
 
@@ -30,7 +30,7 @@
 }
 /* state 2*/
 #blue:hover > [data-a="a"]{
-    transform: rotate(45deg)  ;
+    transform: rotate(360deg)  ;
 }
 /* state 1*/
 /*class selector*/
@@ -40,7 +40,7 @@
 }
 /*state 2*/
 #blue:hover > .b{
-    transform: rotate(45deg)  ;
+    transform: rotate(360deg)  ;
 
 }
 /*state 1*/
@@ -49,7 +49,7 @@
 }
 /*state 2*/
 #blue:hover > .p{
-    transform: rotate(45deg)  ;
+    transform: rotate(360deg)  ;
 }
 /*state 1*/
 .c{
@@ -57,5 +57,5 @@
 }
 /*state 2*/
 #blue:hover > .c{
-    transform: rotate(45deg)  ;
+    transform: rotate(360deg)  ;
 }
