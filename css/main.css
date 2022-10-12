@@ -1,0 +1,61 @@
+/*use id salector*/
+#blue{
+    width: 500px;
+    height: 500px;
+    background: blue;
+    /*margin: top/bottom left/right*/
+    margin: 100px auto;
+   
+}
+.r{
+    width: 200px;
+    height: 200px;
+    transform: rotate(0deg) ;
+    display: inline-block;
+    transition: all 2s linear;
+    transform-origin: right bottom;
+}
+
+/*direct child selector*/
+/*syntex-
+       parent > child {
+
+       }
+*/
+/*state 1*/
+#blue > [data-a="a"]{
+    
+    background: fuchsia;
+    
+}
+/* state 2*/
+#blue:hover > [data-a="a"]{
+    transform: rotate(45deg)  ;
+}
+/* state 1*/
+/*class selector*/
+.b{
+  
+    background: mediumpurple;
+}
+/*state 2*/
+#blue:hover > .b{
+    transform: rotate(45deg)  ;
+
+}
+/*state 1*/
+.p{
+    background: chocolate;
+}
+/*state 2*/
+#blue:hover > .p{
+    transform: rotate(45deg)  ;
+}
+/*state 1*/
+.c{
+    background: gold;
+}
+/*state 2*/
+#blue:hover > .c{
+    transform: rotate(45deg)  ;
+}
